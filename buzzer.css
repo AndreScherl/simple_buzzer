@@ -1,16 +1,22 @@
 body {
 	margin: 0px;
+	border: 0px;
 	background: black;
 	text-align: center;
+	overflow: hidden;
 }
 
 .buzzerlight {
 	display: inline-block;
 	width: 24.5%;
-	height: 99%;
+	height: 95%;
 	margin: 0px;
 	border: 0px;
 	opacity: 0.5;
+	color: white;
+	box-shadow: inset 0px 0px 10px 5px #222222;
+	padding-top: 15px;
+	font-size: 2em;
 }
 
 .pressed {
@@ -18,7 +24,7 @@ body {
 }
 
 #blue {
-	background: blue;
+	background: deepskyblue;
 }
 
 #orange {
@@ -26,7 +32,7 @@ body {
 }
 
 #green {
-	background: green;
+	background: lawngreen;
 }
 
 #red {
