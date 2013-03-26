@@ -1,0 +1,34 @@
+body {
+	margin: 0px;
+	background: black;
+	text-align: center;
+}
+
+.buzzerlight {
+	display: inline-block;
+	width: 24.5%;
+	height: 99%;
+	margin: 0px;
+	border: 0px;
+	opacity: 0.5;
+}
+
+.pressed {
+	opacity: 1.0;
+}
+
+#blue {
+	background: blue;
+}
+
+#orange {
+	background: orange;
+}
+
+#green {
+	background: green;
+}
+
+#red {
+	background: red;
+}
