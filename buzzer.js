@@ -26,25 +26,36 @@ $(document).ready(function(){
         // reset
         if(e.keyCode == "32") { // space bar
 			$(".buzzerlight").removeClass("pressed");
-			$(".buzzerlight").text("✗");
 			buzzered = false;
 		}
 		
-		if(e.keyCode == "37" && !buzzered) { // left arrow
-			$("#blue").addClass("pressed");
-			buzzered = true;
+		if(e.keyCode == "37") { // left arrow
+			if(!buzzered){
+				$("#blue").addClass("pressed");
+				buzzered = true;
+			}
+			$("#blue").text("✗");
 		}
-		if(e.keyCode == "38" && !buzzered) { // up arrow
-			$("#orange").addClass("pressed");
-			buzzered = true;
+		if(e.keyCode == "38") { // up arrow
+			if(!buzzered){
+				$("#orange").addClass("pressed");
+				buzzered = true;
+			}
+			$("#orange").text("✗");
 		}
-		if(e.keyCode == "39" && !buzzered) { // right arrow
-			$("#green").addClass("pressed");
-			buzzered = true;
+		if(e.keyCode == "39") { // right arrow
+			if(!buzzered){
+				$("#green").addClass("pressed");
+				buzzered = true;
+			}
+			$("#green").text("✗");
 		}
-		if(e.keyCode == "40" && !buzzered) { // down arrow
-			$("#red").addClass("pressed");
-			buzzered = true;
+		if(e.keyCode == "40") { // down arrow
+			if(!buzzered){
+				$("#red").addClass("pressed");
+				buzzered = true;
+			}
+			$("#red").text("✗");
 		}
     });
 });
